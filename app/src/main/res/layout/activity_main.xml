@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ibrahim.findit.MainActivity"
+    android:background="#b0b2b3">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/relativeLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="کۆمپانیاکان"
+            android:id="@+id/btnCompanies"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="56dp"
+            android:textColor="#08657c"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button6"
+            android:singleLine="false"
+            android:textColor="#08657c"
+            android:textSize="20sp"
+            android:layout_below="@+id/button5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="عەیادەکانی پزیشکان" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7"
+            android:singleLine="false"
+            android:textColor="#08657c"
+            android:textSize="20sp"
+            android:layout_below="@+id/button6"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="وەزارەتەکان" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button8"
+            android:singleLine="false"
+            android:textColor="#08657c"
+            android:textSize="20sp"
+            android:layout_below="@+id/button7"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="فەرمانگە حکومیەکان" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="نوسینگەکانی خانوو و زەوی"
+            android:id="@+id/button4"
+            android:layout_below="@+id/btnCompanies"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:singleLine="false"
+            android:textColor="#08657c"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="نوسینگەکانی پارێزەران"
+            android:id="@+id/button5"
+            android:singleLine="false"
+            android:textColor="#08657c"
+            android:textSize="20sp"
+            android:layout_below="@+id/button4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9"
+            android:singleLine="false"
+            android:textColor="#08657c"
+            android:textSize="20dp"
+            android:layout_below="@+id/button8"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button10"
+            android:singleLine="false"
+            android:textColor="#08657c"
+            android:textSize="20dp"
+            android:layout_below="@+id/button9"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+</ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="English"
+            android:id="@+id/button2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false"
+            android:textColor="#08657c" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="کوردی"
+            android:id="@+id/button"
+            android:textColor="#fbfbfa"
+            android:background="@drawable/mycustombutton"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_toEndOf="@+id/button2" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="عربي"
+            android:id="@+id/button11"
+            android:textColor="#08657c"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button" />
+
+        <Spinner
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinner2"
+            android:entries="@array/kurdicitie"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="شار"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical|right|center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#08657c" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Findit</string>
+    <string-array name="kurdicitie">
+        <item>هەولێر</item>
+        <item>سلێمانی</item>
+        <item>دهۆک</item>
+        <item>هەڵەبجە</item>
+
+    </string-array>
+</resources>
